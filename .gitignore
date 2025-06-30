@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+rest-api-frontend/build/
+.env.local
+rest-api-frontend/.env
