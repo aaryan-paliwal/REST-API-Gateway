@@ -1,4 +1,4 @@
-const ActivityLog = require("../models/activityLog");
+const ActivityLog = require("../models/ActivityLog");
 
 exports.getActivityLogs = async (req, res, next) => {
   try {
