@@ -1,6 +1,6 @@
 # REST API Project
 
-![Node.js](https://img.shields.io/badge/Backend-Express.js-green?logo=express) ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?logo=mongodb) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Node.js](https://img.shields.io/badge/Backend-Express.js-green?logo=express) ![React](https://img.shields.io/badge/Frontend-React-blue?logo=react) ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen?logo=mongodb)
 
 ---
 
