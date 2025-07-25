@@ -3,7 +3,10 @@ import axios from "axios";
 // Get the backend URL from the environment variable.
 // In development, it will be 'http://localhost:3000' (or your local backend port).
 // In production (Vercel), it will be the URL you set in REACT_APP_BACKEND_URL.
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+let BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+// Ensure BACKEND_URL does not end with a slash
+if (BACKEND_URL.endsWith("/")) BACKEND_URL = BACKEND_URL.slice(0, -1);
+BACKEND_URL = BACKEND_URL + "/api";
 
 // Create an Axios instance with the dynamic base URL for API requests
 const API = axios.create({
