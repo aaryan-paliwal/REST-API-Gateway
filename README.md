@@ -51,7 +51,7 @@ A modern, full-stack web application for item management, user authentication, a
 
 ## 🌍 Deployment Link
 
-[Live App](https://your-deployment-url.com)
+[FlowOps.co](https://flowops-five.vercel.app)
 
 ---
 

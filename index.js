@@ -47,7 +47,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL; // Your Vercel frontend URL from 
 // Determine allowed origins based on environment
 const isProduction = process.env.NODE_ENV === 'production';
 const allowedOrigins = isProduction
-    ? ["https://flowops.onrender.com"]
+    ? ["https://flowops.onrender.com", "https://flowops-five.vercel.app"]
     : ["http://localhost:3000", "http://localhost:3001", "http://localhost:3002"];
 
 const corsOptions = {
