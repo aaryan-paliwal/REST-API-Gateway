@@ -1,8 +1,13 @@
 import axios from "axios";
 
-// Create an Axios instance with a base URL for API requests
+// Get the backend URL from the environment variable.
+// In development, it will be 'http://localhost:3000' (or your local backend port).
+// In production (Vercel), it will be the URL you set in REACT_APP_BACKEND_URL.
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3000";
+
+// Create an Axios instance with the dynamic base URL for API requests
 const API = axios.create({
-  baseURL: "/api",
+  baseURL: BACKEND_URL,
 });
 
 // Request interceptor: Attach JWT token from localStorage to every request if available
@@ -16,12 +21,13 @@ API.interceptors.request.use((config) => {
 API.interceptors.response.use(
   (response) => response, // Pass successful responses through
   (error) => {
-    if (error.response.status === 401) {
+    // Check if the error response exists and has a status
+    if (error.response && error.response.status === 401) {
       // If unauthorized, remove token and redirect to login
       localStorage.removeItem("token");
-      window.location.href = "/login";
+      window.location.href = "/login"; // Use window.location.href for full page reload/redirect
     }
-    return Promise.reject(error);
+    return Promise.reject(error); // Propagate the error
   }
 );
 
