@@ -24,19 +24,32 @@ A modern, full-stack web application for item management, user authentication, a
 
 ## 🖼️ Screenshots
 
-> _Add screenshots of your app here!_
-
-```
-![Home Page](screenshots/home.png)
-![Dashboard](screenshots/dashboard.png)
-![Items Page](screenshots/items.png)
-```
+<table width="100%">
+  <tr>
+    <td align="center" width="50%" style="padding: 10px;">
+      <img width="100%" alt="Screenshot 1: User Login Page" src="https://github.com/user-attachments/assets/10b7f4de-e842-474c-bcf1-d3676b3d75b4" style="border-radius: 8px; border: 1px solid #ddd;">
+      <p><b>1. User Login Page</b><br>Secure authentication for users.</p>
+    </td>
+    <td align="center" width="50%" style="padding: 10px;">
+      <img width="100%" alt="Screenshot 2: Admin Dashboard" src="https://github.com/user-attachments/assets/01d80ec7-8fce-4bff-9e17-701e057643b1" style="border-radius: 8px; border: 1px solid #ddd;">
+      <p><b>2. Admin Dashboard</b><br>Overview and management for administrators.</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%" style="padding: 10px;">
+      <img width="100%" alt="Screenshot 3: Item Listing" src="https://github.com/user-attachments/assets/fbd9a7c7-9023-4147-a24d-ca792522835e" style="border-radius: 8px; border: 1px solid #ddd;">
+      <p><b>3. Item Listing (User View)</b><br>Users can manage their specific items.</p>
+    </td>
+    <td align="center" width="50%" style="padding: 10px;">
+      <img width="100%" alt="Screenshot 4: Activity Log" src="https://github.com/user-attachments/assets/3f13f4c7-c00b-439e-a6bd-105566fe7b54" style="border-radius: 8px; border: 1px solid #ddd;">
+      <p><b>4. Activity Log (Admin View)</b><br>Detailed logs of all user and admin activities.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🌍 Deployment Link
-
-> _Add your live deployment link here!_
 
 [Live App](https://your-deployment-url.com)
 
